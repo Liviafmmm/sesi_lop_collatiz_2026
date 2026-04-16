@@ -1,0 +1,19 @@
+INICIO
+ PASSOS = 0;
+  ESCREVA("Digite um número inteiro positivo");
+  LEIA(N);
+  SE (N <= 0)
+  ENTÃO
+    ESCREVA("Por favor, digite um número positivo");
+
+   ESCREVA("Sequencia de Collantz:");
+   ENQUANTO(N != 1)
+      ESCREVA("N ->");
+       SE (N % 2 == 0)
+           N = N / 2;
+       SE NÃO N = 3 * N +1;
+   PASSOS++;
+    ESCREVA("1\N");
+    ESCREVA("TOTAL DE PASSOS: %d", PASSOS);
+   
+FIM
